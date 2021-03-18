@@ -1,0 +1,13 @@
+server:
+  port: 9088
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.52.102:3306/spider?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:myBatisMapping/*.xml
+#  type-aliases-package: com.cyh.entity
