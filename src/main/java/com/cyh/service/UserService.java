@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
     @Autowired
-    private IUserMapper userDao;
+    private IUserDao userDao;
 
 
     public User queryUserInfo() {

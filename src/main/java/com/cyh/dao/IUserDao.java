@@ -1,6 +1,7 @@
 package com.cyh.dao;
 
 import com.cyh.bean.User;
+import org.springframework.stereotype.Service;
 
 /**
  * Author : chyh
@@ -8,6 +9,7 @@ import com.cyh.bean.User;
  * Time : 11:20
  */
 
+@Service
 public interface IUserDao{
     User queryUserInfo();
 }
