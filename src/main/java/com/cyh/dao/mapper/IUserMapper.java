@@ -1,7 +1,6 @@
 package com.cyh.dao.mapper;
 
 import com.cyh.bean.User;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.stereotype.Repository;
 
 /**

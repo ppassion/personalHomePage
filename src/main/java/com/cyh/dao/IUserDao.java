@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public interface IUserDao{
+public interface IUserDao extends BaseDao<User>{
     User queryUserInfo();
 }

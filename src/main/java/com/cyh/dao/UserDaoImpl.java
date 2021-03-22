@@ -16,4 +16,14 @@ public class UserDaoImpl implements IUserDao{
     public User queryUserInfo() {
         return userMapper.queryUserInfo();
     }
+
+    @Override
+    public int insert(User object) {
+        return 0;
+    }
+
+    @Override
+    public User queryByUserId(String userId) {
+        return null;
+    }
 }
