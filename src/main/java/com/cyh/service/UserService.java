@@ -1,8 +1,7 @@
 package com.cyh.service;
 
-import com.cyh.bean.User;
-import com.cyh.dao.IUserDao;
-import com.cyh.dao.mapper.IUserMapper;
+import com.cyh.bean.MyUser;
+import com.cyh.dao.user.IUserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +17,7 @@ public class UserService {
     private IUserDao userDao;
 
 
-    public User queryUserInfo() {
+    public MyUser queryUserInfo() {
         return userDao.queryUserInfo();
     }
 }

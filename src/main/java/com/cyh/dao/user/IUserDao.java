@@ -1,6 +1,6 @@
-package com.cyh.dao;
+package com.cyh.dao.user;
 
-import com.cyh.bean.User;
+import com.cyh.bean.MyUser;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public interface IUserDao extends BaseDao<User>{
-    User queryUserInfo();
+public interface IUserDao {
+    MyUser queryUserInfo();
 }

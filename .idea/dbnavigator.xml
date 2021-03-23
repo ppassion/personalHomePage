@@ -24,16 +24,22 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="31795d08-38c4-4ab6-a5df-925ae1699e78">
+        <schema name="spider" object-types="view, table, function, column" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="31795d08-38c4-4ab6-a5df-925ae1699e78">
       <console name="homepage" type="STANDARD" schema="spider" session="Main"><![CDATA[select
-        address,
-        age,
-        name
+        *
         from
-        my_user;]]></console>
+        my_user;
+
+INSERT INTO my_user
+ (address)
+VALUES ('bbb');]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

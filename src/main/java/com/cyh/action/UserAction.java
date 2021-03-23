@@ -1,7 +1,7 @@
 package com.cyh.action;
 
-import com.cyh.bean.User;
-import com.cyh.dao.UserDaoImpl;
+import com.cyh.bean.MyUser;
+import com.cyh.dao.user.UserDaoImpl;
 import com.cyh.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,10 +20,20 @@ public class UserAction {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private UserDaoImpl userDao;
 
     @ResponseBody
     @RequestMapping("queryUserInfo")
-    public User queryUserInfo() {
+    public MyUser queryUserInfo() {
         return userService.queryUserInfo();
+    }
+
+    @ResponseBody
+    @RequestMapping("insertUser")
+    public void insertUser() {
+        MyUser myUser = new MyUser();
+        myUser.setAddress("0323");
+        userDao.insert(myUser);
     }
 }
